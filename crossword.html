@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            function checkAnswer()
+            {
+                let answer = "'" + document.querySelector("input").value + "'";
+                for(let node of document.querySelectorAll("td"))
+                {
+                    if (node.className.indexOf(answer) >= 0)
+                    {
+                        node.style = "color: black";
+                    }
+                }
+                document.querySelector("input").value = "";
+            }
+        </script>
+        <style>
+            .content {
+                max-width: 500px;
+                margin: auto;
+            }
+            table {
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1px solid black;
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            td:empty {
+                background: black;
+            }
+
+            sup {
+                position: super;
+                font-size: 20px;
+                color: black;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>
+                World's Hardest Mini
+            </h1>
+            <table>
+                <tr>
+                    <td class = "'will' 'w'"><sup>1</sup>W</td>
+                    <td class = "'will' 'iyeat'"><sup>2</sup>I</td>
+                    <td class = "'will' 'loli'"><sup>3</sup>L</td>
+                    <td class = "'will' 'lumen'"><sup>4</sup>L</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class = "'you' 'iyeat'"><sup>5</sup>Y</td>
+                    <td class = "'you' 'loli'">O</td>
+                    <td class = "'you' 'lumen'">U</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class = "'be'"><sup>6</sup>B</td>
+                    <td class = "'be' 'iyeat'">E</td>
+                    <td></td>
+                    <td class = "'my' 'lumen'"><sup>7</sup>M</td>
+                    <td class = "'my'"><sup>8</sup>Y</td>
+                </tr>
+                <tr>
+                    <td class = "'valentine'"><sup>9</sup>V</td>
+                    <td class = "'valentine' 'iyeat'">A</td>
+                    <td class = "'valentine' 'loli'"><sup>10</sup>L</td>
+                    <td class = "'valentine' 'lumen'">E</td>
+                    <td class = "'valentine'">N</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class = "'valentine' 'iyeat'"><sup>11</sup>T</td>
+                    <td class = "'valentine' 'loli'">I</td>
+                    <td class = "'valentine' 'lumen'">N</td>
+                    <td class = "'valentine'">E</td>
+                </tr>
+            </table>
+            <ul>
+            <h2>
+                Down
+            </h2>
+                <li>
+                    1. After vee, but before ex.
+                </li>
+                <li>
+                    2. An american rapper minus the i.
+                </li>
+                <li>
+                    3. A childlike female character in Japanese anime and manga.
+                </li>
+                <li>
+                    4. Unit for measuring brightness.
+                </li>
+                <li>
+                    6. Acronym for Bacterial Vaginosis.
+                </li>
+                <li>
+                    8. Anagram for New Year's Eve Abbr.
+                </li>
+                <li>
+                    10. With 3 down.
+                </li>
+            <h2>
+                Across
+            </h2>
+                <li>
+                    1. Written document to allocate inheritance.
+                </li>
+                <li>
+                    5. 2018 psychological thriller tv show.
+                </li>
+                <li>
+                    6. To __ or not to __
+                </li>
+                <li>
+                    7. O Me O __
+                </li>
+                <li>
+                    9. The patron saint of lovers, epileptics, and beekeepers.
+                </li>
+                <li>
+                    11. With 9 across.
+                </li>
+            </ul>
+            <h3>
+                Type answers here:
+            </h3>
+            <form onsubmit="javascript:checkAnswer()" action="javascript:null">
+                <input />
+            </form>
+        </div>
+    </body>
+</html>
